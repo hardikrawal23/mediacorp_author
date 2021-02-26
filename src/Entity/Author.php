@@ -176,7 +176,9 @@ class Author extends ContentEntityBase implements AuthorInterface {
         'weight' => -5,
       ))
       ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', TRUE);
+      ->setDisplayConfigurable('view', TRUE)
+      // Adding custom constraint for age validation
+      ->addConstraint('AgeCheckConstraint');
 
     $fields['langcode'] = BaseFieldDefinition::create('language')
       ->setLabel(t('Language code'))
