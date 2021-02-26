@@ -3,4 +3,7 @@ description: Provides an author entity
 core: 8.x
 package: Custom
 type: module
+dependencies:
+  - drupal:jsonapi
+  - jsonapi_resources:jsonapi_resources
 
