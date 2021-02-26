@@ -1,0 +1,6 @@
+name: Mediacorp author entity
+description: Provides an author entity
+core: 8.x
+package: Custom
+type: module
+
